@@ -36,6 +36,7 @@ class SummernoteWidgetBase(forms.Textarea):
             'toolbar': summernote_config['toolbar'],
             'lang': _get_proper_language(),
             'airMode': summernote_config['airMode'],
+            'styleTags': summernote_config.get('styleTags',[]),
             'styleWithSpan': summernote_config['styleWithSpan'],
             'direction': summernote_config['direction'],
             'width': self.attrs.get('width', summernote_config['width']),
